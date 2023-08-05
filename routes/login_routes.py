@@ -31,7 +31,7 @@ def generate_token(username: Union[str, Any]) -> str:
     return encoded_jwt
 
 #Hàm login 
-@login_api_router.post('/')
+@login_api_router.post('/login')
 async def login(request_data: User):
     print(f'[x] request_data: {request_data.__dict__}')
     if verify_password(username=request_data.username, password=request_data.password):

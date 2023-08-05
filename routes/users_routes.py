@@ -19,11 +19,11 @@ async def get_user(id: str):
     return users_serializer(collection_name.find_one({"_id": ObjectId(id)}))
 
 
-# post
-# @user_api_router.post("/")
-# async def create_user(user: User):
-#     _id = collection_name.insert_one(dict(user))
-#     return users_serializer(collection_name.find({"_id": _id.inserted_id}))
+#post
+@user_api_router.post("/")
+async def create_user(user: User):
+    _id = collection_name.insert_one(dict(user))
+    return users_serializer(collection_name.find({"_id": _id.inserted_id}))
 
 
 # update
