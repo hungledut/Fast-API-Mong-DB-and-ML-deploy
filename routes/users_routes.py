@@ -7,7 +7,6 @@ from schemas.user_schema import user_serializer, users_serializer
 from bson import ObjectId
 
 user_api_router = APIRouter()
-
 # retrieve
 @user_api_router.get("/",dependencies=[Depends(reusable_oauth2)])
 async def get_users():
