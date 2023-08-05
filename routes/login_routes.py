@@ -1,9 +1,10 @@
-from fastapi import FastAPI, HTTPException,Depends,APIRouter
-from pydantic import BaseModel
-from datetime import datetime, timedelta
+"Login Routes"
+
 from typing import Union, Any
+from datetime import datetime, timedelta
+from fastapi import APIRouter,HTTPException
+
 import jwt
-from security import reusable_oauth2
 from models.user_model import User
 from config.database import collection_name
 
@@ -13,14 +14,16 @@ SECRET_KEY = '123456'
 login_api_router = APIRouter()
 
 
-#Hàm check username và password từ database
+
 def verify_password(username, password):
+    "Check user and password from database"
     user = collection_name.find_one({"username": username})
-    if user == None or password != user['password']:
+    if user is None or password != user['password']:
         return False
     return True
 
 def generate_token(username: Union[str, Any]) -> str:
+    "This function to generate a token"
     expire = datetime.utcnow() + timedelta(
         seconds=60 * 60 * 24 * 3  # Expired after 3 days
     )
@@ -30,9 +33,10 @@ def generate_token(username: Union[str, Any]) -> str:
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=SECURITY_ALGORITHM)
     return encoded_jwt
 
-#Hàm login 
+
 @login_api_router.post('/login')
 async def login(request_data: User):
+    "Login with username and password"
     print(f'[x] request_data: {request_data.__dict__}')
     if verify_password(username=request_data.username, password=request_data.password):
         token = generate_token(request_data.username)
