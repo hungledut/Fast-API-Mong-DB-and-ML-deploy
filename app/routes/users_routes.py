@@ -2,10 +2,10 @@
 from fastapi import APIRouter,Depends
 from bson import ObjectId
 
-from models.user_model import User
-from config.database import collection_name
-from security import validate_token
-from schemas.user_schema import users_serializer
+from app.models.user_model import User
+from app.config.database import collection_name
+from app.security import validate_token
+from app.schemas.user_schema import users_serializer
 
 user_api_router = APIRouter()
 

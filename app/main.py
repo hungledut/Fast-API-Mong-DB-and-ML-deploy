@@ -3,10 +3,9 @@ from fastapi import FastAPI
 from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
 from starlette.requests import Request
 from starlette.responses import Response
-from routes.users_routes import user_api_router
-from routes.login_routes import login_api_router
-
-from logger.logger import custom_logger
+from app.routes.users_routes import user_api_router
+from app.routes.login_routes import login_api_router
+from app.logger.logger import custom_logger 
 
 class LoggingMiddleware(BaseHTTPMiddleware):
     """Logging All API request"""

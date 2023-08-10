@@ -5,8 +5,8 @@ from datetime import datetime, timedelta
 from fastapi import APIRouter,HTTPException
 
 import jwt
-from models.user_model import User
-from config.database import collection_name
+from app.models.user_model import User
+from app.config.database import collection_name
 
 SECURITY_ALGORITHM = 'HS256'
 SECRET_KEY = '123456'
