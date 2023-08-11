@@ -40,3 +40,17 @@
 [10/08/2023 13:06:16] [INFO] [root] [dispatch():27] [PID:17188 TID:26640] Response status code: 200
 [10/08/2023 13:06:36] [INFO] [root] [dispatch():17] [PID:17188 TID:26640] Received request: GET http://127.0.0.1:8000/
 [10/08/2023 13:06:37] [INFO] [root] [dispatch():27] [PID:17188 TID:26640] Response status code: 200
+[10/08/2023 13:56:27] [INFO] [root] [dispatch():17] [PID:8668 TID:28668] Received request: GET http://127.0.0.1:8000/
+[10/08/2023 13:56:27] [INFO] [root] [dispatch():27] [PID:8668 TID:28668] Response status code: 403
+[10/08/2023 13:56:28] [INFO] [root] [dispatch():17] [PID:8668 TID:28668] Received request: GET http://127.0.0.1:8000/favicon.ico
+[10/08/2023 13:56:28] [INFO] [root] [dispatch():27] [PID:8668 TID:28668] Response status code: 403
+[10/08/2023 14:21:58] [INFO] [root] [dispatch():17] [PID:8668 TID:28668] Received request: GET http://127.0.0.1:8000/dóc
+[10/08/2023 14:21:58] [INFO] [root] [dispatch():27] [PID:8668 TID:28668] Response status code: 403
+[10/08/2023 14:21:58] [INFO] [root] [dispatch():17] [PID:8668 TID:28668] Received request: GET http://127.0.0.1:8000/favicon.ico
+[10/08/2023 14:21:58] [INFO] [root] [dispatch():27] [PID:8668 TID:28668] Response status code: 403
+[10/08/2023 14:22:01] [INFO] [root] [dispatch():17] [PID:8668 TID:28668] Received request: GET http://127.0.0.1:8000/docs
+[10/08/2023 14:22:01] [INFO] [root] [dispatch():27] [PID:8668 TID:28668] Response status code: 200
+[10/08/2023 14:22:01] [INFO] [root] [dispatch():17] [PID:8668 TID:28668] Received request: GET http://127.0.0.1:8000/openapi.json
+[10/08/2023 14:22:01] [INFO] [root] [dispatch():27] [PID:8668 TID:28668] Response status code: 200
+[10/08/2023 14:23:15] [INFO] [root] [dispatch():17] [PID:8668 TID:28668] Received request: GET http://127.0.0.1:8000/
+[10/08/2023 14:23:15] [INFO] [root] [dispatch():27] [PID:8668 TID:28668] Response status code: 403
