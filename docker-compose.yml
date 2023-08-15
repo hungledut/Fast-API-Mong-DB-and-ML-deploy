@@ -1,0 +1,29 @@
+version: "3.11.4"
+name: dockerized-fastapi-mongodb
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: app_container
+
+    volumes:
+      - ./app:/code/app
+    restart: always
+    depends_on:
+      - mongodb
+    ports:
+      - "5000:7979"
+
+
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb_container
+    restart: always
+    ports:
+      - "27001:27017"
+    volumes:
+      - ./mongodb_data_container:/data/db
+

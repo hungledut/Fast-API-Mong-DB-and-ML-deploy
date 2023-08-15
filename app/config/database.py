@@ -1,7 +1,7 @@
 "Connect to Database"
 from pymongo import MongoClient
 
-client = MongoClient("mongodb+srv://hungledut:hung782002@hung3que.yxqk6qs.mongodb.net/")
+client = MongoClient("mongodb://mongodb_container:27017")
 
 db = client.ML_deploy
 
