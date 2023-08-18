@@ -1,15 +1,15 @@
 "Iris Routes"
-from fastapi import APIRouter
+from fastapi import APIRouter,Depends
 from sklearn.datasets import load_iris
 from app.ml.model_ml import iris_clf
 from app.models.iris_model import Iris
+from app.security import validate_token
 
-
-iris_api_router = APIRouter()
+iris_api_router = APIRouter(tags = ['ML Model for Iris'])
 iris = load_iris()
 
 
-@iris_api_router.post('/predict')
+@iris_api_router.post('/',dependencies=[Depends(validate_token)])
 async def predict(data : Iris):
     "iris predict"
     test_data = [[

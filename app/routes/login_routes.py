@@ -11,7 +11,7 @@ from app.config.database import collection_name
 SECURITY_ALGORITHM = 'HS256'
 SECRET_KEY = '123456'
 
-login_api_router = APIRouter()
+login_api_router = APIRouter(tags = ['Login'])
 
 
 
@@ -34,7 +34,7 @@ def generate_token(username: Union[str, Any]) -> str:
     return encoded_jwt
 
 
-@login_api_router.post('/login')
+@login_api_router.post('/')
 async def login(request_data: User):
     "Login with username and password"
     print(f'[x] request_data: {request_data.__dict__}')

@@ -33,7 +33,7 @@ class LoggingMiddleware(BaseHTTPMiddleware):
 
 app = FastAPI()
 
-app.include_router(user_api_router)
-app.include_router(login_api_router)
-app.include_router(iris_api_router)
+app.include_router(user_api_router, prefix = '/user')
+app.include_router(login_api_router, prefix = '/login')
+app.include_router(iris_api_router, prefix = '/iris')
 app.add_middleware(LoggingMiddleware)

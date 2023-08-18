@@ -7,7 +7,7 @@ from app.config.database import collection_name
 from app.security import validate_token
 from app.schemas.user_schema import users_serializer
 
-user_api_router = APIRouter()
+user_api_router = APIRouter(tags = ['User'])
 
 # retrieve
 @user_api_router.get("/",dependencies=[Depends(validate_token)])
