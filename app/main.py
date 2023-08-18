@@ -5,6 +5,7 @@ from starlette.requests import Request
 from starlette.responses import Response
 from app.routes.users_routes import user_api_router
 from app.routes.login_routes import login_api_router
+from app.routes.iris_routes import iris_api_router
 from app.logger.logger import custom_logger 
 
 class LoggingMiddleware(BaseHTTPMiddleware):
@@ -34,4 +35,5 @@ app = FastAPI()
 
 app.include_router(user_api_router)
 app.include_router(login_api_router)
+app.include_router(iris_api_router)
 app.add_middleware(LoggingMiddleware)

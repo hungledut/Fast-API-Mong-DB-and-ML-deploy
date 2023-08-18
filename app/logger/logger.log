@@ -155,3 +155,13 @@
 [15/08/2023 07:32:08] [INFO] [root] [dispatch():27] [PID:37 TID:140519405759360] Response status code: 200
 [15/08/2023 07:32:42] [INFO] [root] [dispatch():17] [PID:37 TID:140519405759360] Received request: GET http://127.0.0.1:5000/
 [15/08/2023 07:32:42] [INFO] [root] [dispatch():27] [PID:37 TID:140519405759360] Response status code: 200
+[18/08/2023 11:04:50] [INFO] [root] [dispatch():18] [PID:23892 TID:22692] Received request: GET http://127.0.0.1:8000/
+[18/08/2023 11:04:50] [INFO] [root] [dispatch():28] [PID:23892 TID:22692] Response status code: 403
+[18/08/2023 11:04:51] [INFO] [root] [dispatch():18] [PID:23892 TID:22692] Received request: GET http://127.0.0.1:8000/favicon.ico
+[18/08/2023 11:04:51] [INFO] [root] [dispatch():28] [PID:23892 TID:22692] Response status code: 403
+[18/08/2023 11:04:55] [INFO] [root] [dispatch():18] [PID:23892 TID:22692] Received request: GET http://127.0.0.1:8000/docs
+[18/08/2023 11:04:55] [INFO] [root] [dispatch():28] [PID:23892 TID:22692] Response status code: 200
+[18/08/2023 11:04:56] [INFO] [root] [dispatch():18] [PID:23892 TID:22692] Received request: GET http://127.0.0.1:8000/openapi.json
+[18/08/2023 11:04:56] [INFO] [root] [dispatch():28] [PID:23892 TID:22692] Response status code: 200
+[18/08/2023 11:05:15] [INFO] [root] [dispatch():18] [PID:23892 TID:22692] Received request: POST http://127.0.0.1:8000/predict
+[18/08/2023 11:05:15] [INFO] [root] [dispatch():28] [PID:23892 TID:22692] Response status code: 200
