@@ -23,7 +23,7 @@ async def get_user(user_id: str):
 
 
 #post
-@user_api_router.post("/",dependencies=[Depends(validate_token)])
+@user_api_router.post("/create",dependencies=[Depends(validate_token)])
 async def create_user(user: User):
     "Create a user"
     _id = collection_name.insert_one(dict(user))
@@ -31,7 +31,7 @@ async def create_user(user: User):
 
 
 # update
-@user_api_router.put("/{user_id}",dependencies=[Depends(validate_token)])
+@user_api_router.put("/update/{user_id}",dependencies=[Depends(validate_token)])
 async def update_user(user_id: str, user: User):
     "Update a user"
     collection_name.find_one_and_update({"_id": ObjectId(user_id)}, {
@@ -40,7 +40,7 @@ async def update_user(user_id: str, user: User):
     return users_serializer(collection_name.find({"_id": ObjectId(user_id)}))
 
 # delete
-@user_api_router.delete("/{id}",dependencies=[Depends(validate_token)])
+@user_api_router.delete("/delete/{user_id}",dependencies=[Depends(validate_token)])
 async def delete_user(user_id: str):
     "Delete a user"
     collection_name.find_one_and_delete({"_id": ObjectId(user_id)})

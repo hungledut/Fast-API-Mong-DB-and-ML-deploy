@@ -221,3 +221,151 @@
 [18/08/2023 16:11:18] [INFO] [root] [dispatch():28] [PID:26880 TID:27716] Response status code: 200
 [18/08/2023 16:11:18] [INFO] [root] [dispatch():18] [PID:26880 TID:27716] Received request: GET http://127.0.0.1:8000/openapi.json
 [18/08/2023 16:11:18] [INFO] [root] [dispatch():28] [PID:26880 TID:27716] Response status code: 200
+[18/08/2023 23:25:11] [DEBUG] [asyncio] [__init__():633] [PID:21460 TID:12036] Using proactor: IocpProactor
+[18/08/2023 23:25:11] [INFO] [root] [dispatch():18] [PID:21460 TID:12036] Received request: GET http://testserver/user/all
+[18/08/2023 23:25:11] [INFO] [root] [dispatch():28] [PID:21460 TID:12036] Response status code: 403
+[18/08/2023 23:25:11] [INFO] [httpx] [_send_single_request():1013] [PID:21460 TID:18924] HTTP Request: GET http://testserver/user/all "HTTP/1.1 403 Forbidden"
+[18/08/2023 23:25:30] [DEBUG] [asyncio] [__init__():633] [PID:29096 TID:20520] Using proactor: IocpProactor
+[18/08/2023 23:25:30] [INFO] [root] [dispatch():18] [PID:29096 TID:20520] Received request: GET http://testserver/user/all
+[18/08/2023 23:25:30] [INFO] [root] [dispatch():28] [PID:29096 TID:20520] Response status code: 403
+[18/08/2023 23:25:30] [INFO] [httpx] [_send_single_request():1013] [PID:29096 TID:21648] HTTP Request: GET http://testserver/user/all "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:07:02] [INFO] [root] [dispatch():18] [PID:19960 TID:7240] Received request: GET http://127.0.0.1:8000/
+[19/08/2023 13:07:02] [INFO] [root] [dispatch():28] [PID:19960 TID:7240] Response status code: 404
+[19/08/2023 13:07:03] [INFO] [root] [dispatch():18] [PID:19960 TID:7240] Received request: GET http://127.0.0.1:8000/favicon.ico
+[19/08/2023 13:07:03] [INFO] [root] [dispatch():28] [PID:19960 TID:7240] Response status code: 404
+[19/08/2023 13:07:09] [INFO] [root] [dispatch():18] [PID:19960 TID:7240] Received request: GET http://127.0.0.1:8000/docs
+[19/08/2023 13:07:09] [INFO] [root] [dispatch():28] [PID:19960 TID:7240] Response status code: 200
+[19/08/2023 13:07:09] [INFO] [root] [dispatch():18] [PID:19960 TID:7240] Received request: GET http://127.0.0.1:8000/openapi.json
+[19/08/2023 13:07:09] [INFO] [root] [dispatch():28] [PID:19960 TID:7240] Response status code: 200
+[19/08/2023 13:07:36] [INFO] [root] [dispatch():18] [PID:23484 TID:13816] Received request: GET http://127.0.0.1:8000/docs
+[19/08/2023 13:07:36] [INFO] [root] [dispatch():28] [PID:23484 TID:13816] Response status code: 200
+[19/08/2023 13:07:36] [INFO] [root] [dispatch():18] [PID:23484 TID:13816] Received request: GET http://127.0.0.1:8000/openapi.json
+[19/08/2023 13:07:36] [INFO] [root] [dispatch():28] [PID:23484 TID:13816] Response status code: 200
+[19/08/2023 13:08:11] [INFO] [root] [dispatch():18] [PID:14308 TID:28232] Received request: GET http://127.0.0.1:8000/docs
+[19/08/2023 13:08:11] [INFO] [root] [dispatch():28] [PID:14308 TID:28232] Response status code: 200
+[19/08/2023 13:08:11] [INFO] [root] [dispatch():18] [PID:14308 TID:28232] Received request: GET http://127.0.0.1:8000/openapi.json
+[19/08/2023 13:08:11] [INFO] [root] [dispatch():28] [PID:14308 TID:28232] Response status code: 200
+[19/08/2023 13:32:38] [DEBUG] [asyncio] [__init__():633] [PID:24248 TID:23084] Using proactor: IocpProactor
+[19/08/2023 13:32:38] [INFO] [root] [dispatch():18] [PID:24248 TID:23084] Received request: GET http://testserver/user/all
+[19/08/2023 13:32:38] [INFO] [root] [dispatch():28] [PID:24248 TID:23084] Response status code: 403
+[19/08/2023 13:32:38] [INFO] [httpx] [_send_single_request():1013] [PID:24248 TID:17988] HTTP Request: GET http://testserver/user/all "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:32:38] [DEBUG] [asyncio] [__init__():633] [PID:24248 TID:30384] Using proactor: IocpProactor
+[19/08/2023 13:32:38] [INFO] [root] [dispatch():18] [PID:24248 TID:30384] Received request: POST http://testserver/user/create
+[19/08/2023 13:32:38] [INFO] [root] [dispatch():28] [PID:24248 TID:30384] Response status code: 403
+[19/08/2023 13:32:38] [INFO] [httpx] [_send_single_request():1013] [PID:24248 TID:17988] HTTP Request: POST http://testserver/user/create "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:34:29] [DEBUG] [asyncio] [__init__():633] [PID:22960 TID:25728] Using proactor: IocpProactor
+[19/08/2023 13:34:29] [INFO] [root] [dispatch():18] [PID:22960 TID:25728] Received request: GET http://testserver/user/all
+[19/08/2023 13:34:29] [INFO] [root] [dispatch():28] [PID:22960 TID:25728] Response status code: 403
+[19/08/2023 13:34:29] [INFO] [httpx] [_send_single_request():1013] [PID:22960 TID:30516] HTTP Request: GET http://testserver/user/all "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:34:29] [DEBUG] [asyncio] [__init__():633] [PID:22960 TID:24868] Using proactor: IocpProactor
+[19/08/2023 13:34:29] [INFO] [root] [dispatch():18] [PID:22960 TID:24868] Received request: POST http://testserver/user/create
+[19/08/2023 13:34:29] [INFO] [root] [dispatch():28] [PID:22960 TID:24868] Response status code: 403
+[19/08/2023 13:34:29] [INFO] [httpx] [_send_single_request():1013] [PID:22960 TID:30516] HTTP Request: POST http://testserver/user/create "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:41:44] [DEBUG] [asyncio] [__init__():633] [PID:4424 TID:4764] Using proactor: IocpProactor
+[19/08/2023 13:41:44] [INFO] [root] [dispatch():18] [PID:4424 TID:4764] Received request: GET http://testserver/user/all
+[19/08/2023 13:41:44] [INFO] [root] [dispatch():28] [PID:4424 TID:4764] Response status code: 403
+[19/08/2023 13:41:44] [INFO] [httpx] [_send_single_request():1013] [PID:4424 TID:28232] HTTP Request: GET http://testserver/user/all "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:41:44] [DEBUG] [asyncio] [__init__():633] [PID:4424 TID:15528] Using proactor: IocpProactor
+[19/08/2023 13:41:44] [INFO] [root] [dispatch():18] [PID:4424 TID:15528] Received request: POST http://testserver/user/create
+[19/08/2023 13:41:44] [INFO] [root] [dispatch():28] [PID:4424 TID:15528] Response status code: 403
+[19/08/2023 13:41:44] [INFO] [httpx] [_send_single_request():1013] [PID:4424 TID:28232] HTTP Request: POST http://testserver/user/create "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:43:20] [DEBUG] [asyncio] [__init__():633] [PID:11496 TID:2260] Using proactor: IocpProactor
+[19/08/2023 13:43:20] [INFO] [root] [dispatch():18] [PID:11496 TID:2260] Received request: GET http://testserver/user/all
+[19/08/2023 13:43:20] [INFO] [root] [dispatch():28] [PID:11496 TID:2260] Response status code: 403
+[19/08/2023 13:43:20] [INFO] [httpx] [_send_single_request():1013] [PID:11496 TID:25408] HTTP Request: GET http://testserver/user/all "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:43:20] [DEBUG] [asyncio] [__init__():633] [PID:11496 TID:2480] Using proactor: IocpProactor
+[19/08/2023 13:43:20] [INFO] [root] [dispatch():18] [PID:11496 TID:2480] Received request: POST http://testserver/user/create
+[19/08/2023 13:43:20] [INFO] [root] [dispatch():28] [PID:11496 TID:2480] Response status code: 403
+[19/08/2023 13:43:20] [INFO] [httpx] [_send_single_request():1013] [PID:11496 TID:25408] HTTP Request: POST http://testserver/user/create "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:43:40] [DEBUG] [asyncio] [__init__():633] [PID:29532 TID:25296] Using proactor: IocpProactor
+[19/08/2023 13:43:40] [INFO] [root] [dispatch():18] [PID:29532 TID:25296] Received request: GET http://testserver/user/all
+[19/08/2023 13:43:40] [INFO] [root] [dispatch():28] [PID:29532 TID:25296] Response status code: 403
+[19/08/2023 13:43:40] [INFO] [httpx] [_send_single_request():1013] [PID:29532 TID:21668] HTTP Request: GET http://testserver/user/all "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:43:40] [DEBUG] [asyncio] [__init__():633] [PID:29532 TID:1968] Using proactor: IocpProactor
+[19/08/2023 13:43:40] [INFO] [root] [dispatch():18] [PID:29532 TID:1968] Received request: POST http://testserver/user/create
+[19/08/2023 13:43:40] [INFO] [root] [dispatch():28] [PID:29532 TID:1968] Response status code: 403
+[19/08/2023 13:43:40] [INFO] [httpx] [_send_single_request():1013] [PID:29532 TID:21668] HTTP Request: POST http://testserver/user/create "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:43:56] [DEBUG] [asyncio] [__init__():633] [PID:18796 TID:21948] Using proactor: IocpProactor
+[19/08/2023 13:43:56] [INFO] [root] [dispatch():18] [PID:18796 TID:21948] Received request: GET http://testserver/user/all
+[19/08/2023 13:43:56] [INFO] [root] [dispatch():28] [PID:18796 TID:21948] Response status code: 403
+[19/08/2023 13:43:56] [INFO] [httpx] [_send_single_request():1013] [PID:18796 TID:21160] HTTP Request: GET http://testserver/user/all "HTTP/1.1 403 Forbidden"
+[19/08/2023 13:43:56] [DEBUG] [asyncio] [__init__():633] [PID:18796 TID:24868] Using proactor: IocpProactor
+[19/08/2023 13:43:56] [INFO] [root] [dispatch():18] [PID:18796 TID:24868] Received request: POST http://testserver/user/create
+[19/08/2023 13:43:56] [INFO] [root] [dispatch():28] [PID:18796 TID:24868] Response status code: 403
+[19/08/2023 13:43:56] [INFO] [httpx] [_send_single_request():1013] [PID:18796 TID:21160] HTTP Request: POST http://testserver/user/create "HTTP/1.1 403 Forbidden"
+[19/08/2023 15:14:18] [DEBUG] [asyncio] [__init__():633] [PID:14864 TID:23956] Using proactor: IocpProactor
+[19/08/2023 15:14:18] [INFO] [root] [dispatch():18] [PID:14864 TID:23956] Received request: GET http://testserver/login
+[19/08/2023 15:14:18] [INFO] [root] [dispatch():28] [PID:14864 TID:23956] Response status code: 307
+[19/08/2023 15:14:18] [INFO] [httpx] [_send_single_request():1013] [PID:14864 TID:24432] HTTP Request: GET http://testserver/login "HTTP/1.1 307 Temporary Redirect"
+[19/08/2023 15:14:18] [DEBUG] [asyncio] [__init__():633] [PID:14864 TID:7272] Using proactor: IocpProactor
+[19/08/2023 15:14:18] [INFO] [root] [dispatch():18] [PID:14864 TID:7272] Received request: GET http://testserver/login/
+[19/08/2023 15:14:18] [INFO] [root] [dispatch():28] [PID:14864 TID:7272] Response status code: 405
+[19/08/2023 15:14:18] [INFO] [httpx] [_send_single_request():1013] [PID:14864 TID:24432] HTTP Request: GET http://testserver/login/ "HTTP/1.1 405 Method Not Allowed"
+[19/08/2023 15:14:28] [DEBUG] [asyncio] [__init__():633] [PID:16456 TID:2372] Using proactor: IocpProactor
+[19/08/2023 15:14:28] [INFO] [root] [dispatch():18] [PID:16456 TID:2372] Received request: GET http://testserver/login
+[19/08/2023 15:14:28] [INFO] [root] [dispatch():28] [PID:16456 TID:2372] Response status code: 307
+[19/08/2023 15:14:28] [INFO] [httpx] [_send_single_request():1013] [PID:16456 TID:1980] HTTP Request: GET http://testserver/login "HTTP/1.1 307 Temporary Redirect"
+[19/08/2023 15:14:28] [DEBUG] [asyncio] [__init__():633] [PID:16456 TID:29088] Using proactor: IocpProactor
+[19/08/2023 15:14:28] [INFO] [root] [dispatch():18] [PID:16456 TID:29088] Received request: GET http://testserver/login/
+[19/08/2023 15:14:28] [INFO] [root] [dispatch():28] [PID:16456 TID:29088] Response status code: 405
+[19/08/2023 15:14:28] [INFO] [httpx] [_send_single_request():1013] [PID:16456 TID:1980] HTTP Request: GET http://testserver/login/ "HTTP/1.1 405 Method Not Allowed"
+[19/08/2023 15:14:28] [DEBUG] [asyncio] [__init__():633] [PID:16456 TID:16208] Using proactor: IocpProactor
+[19/08/2023 15:14:28] [INFO] [root] [dispatch():18] [PID:16456 TID:16208] Received request: POST http://testserver/auth/token
+[19/08/2023 15:14:28] [INFO] [root] [dispatch():28] [PID:16456 TID:16208] Response status code: 404
+[19/08/2023 15:14:28] [INFO] [httpx] [_send_single_request():1013] [PID:16456 TID:1980] HTTP Request: POST http://testserver/auth/token "HTTP/1.1 404 Not Found"
+[19/08/2023 15:14:40] [DEBUG] [asyncio] [__init__():633] [PID:19148 TID:3392] Using proactor: IocpProactor
+[19/08/2023 15:14:40] [INFO] [root] [dispatch():18] [PID:19148 TID:3392] Received request: GET http://testserver/login
+[19/08/2023 15:14:40] [INFO] [root] [dispatch():28] [PID:19148 TID:3392] Response status code: 307
+[19/08/2023 15:14:40] [INFO] [httpx] [_send_single_request():1013] [PID:19148 TID:11996] HTTP Request: GET http://testserver/login "HTTP/1.1 307 Temporary Redirect"
+[19/08/2023 15:14:40] [DEBUG] [asyncio] [__init__():633] [PID:19148 TID:21168] Using proactor: IocpProactor
+[19/08/2023 15:14:40] [INFO] [root] [dispatch():18] [PID:19148 TID:21168] Received request: GET http://testserver/login/
+[19/08/2023 15:14:40] [INFO] [root] [dispatch():28] [PID:19148 TID:21168] Response status code: 405
+[19/08/2023 15:14:40] [INFO] [httpx] [_send_single_request():1013] [PID:19148 TID:11996] HTTP Request: GET http://testserver/login/ "HTTP/1.1 405 Method Not Allowed"
+[19/08/2023 15:14:40] [DEBUG] [asyncio] [__init__():633] [PID:19148 TID:14608] Using proactor: IocpProactor
+[19/08/2023 15:14:40] [INFO] [root] [dispatch():18] [PID:19148 TID:14608] Received request: POST http://testserver/auth/token
+[19/08/2023 15:14:40] [INFO] [root] [dispatch():28] [PID:19148 TID:14608] Response status code: 404
+[19/08/2023 15:14:40] [INFO] [httpx] [_send_single_request():1013] [PID:19148 TID:11996] HTTP Request: POST http://testserver/auth/token "HTTP/1.1 404 Not Found"
+[19/08/2023 15:15:27] [DEBUG] [asyncio] [__init__():633] [PID:22600 TID:14884] Using proactor: IocpProactor
+[19/08/2023 15:15:27] [INFO] [root] [dispatch():18] [PID:22600 TID:14884] Received request: GET http://testserver/login
+[19/08/2023 15:15:27] [INFO] [root] [dispatch():28] [PID:22600 TID:14884] Response status code: 307
+[19/08/2023 15:15:27] [INFO] [httpx] [_send_single_request():1013] [PID:22600 TID:21300] HTTP Request: GET http://testserver/login "HTTP/1.1 307 Temporary Redirect"
+[19/08/2023 15:15:27] [DEBUG] [asyncio] [__init__():633] [PID:22600 TID:25716] Using proactor: IocpProactor
+[19/08/2023 15:15:27] [INFO] [root] [dispatch():18] [PID:22600 TID:25716] Received request: GET http://testserver/login/
+[19/08/2023 15:15:27] [INFO] [root] [dispatch():28] [PID:22600 TID:25716] Response status code: 405
+[19/08/2023 15:15:27] [INFO] [httpx] [_send_single_request():1013] [PID:22600 TID:21300] HTTP Request: GET http://testserver/login/ "HTTP/1.1 405 Method Not Allowed"
+[19/08/2023 15:15:27] [DEBUG] [asyncio] [__init__():633] [PID:22600 TID:22036] Using proactor: IocpProactor
+[19/08/2023 15:15:27] [INFO] [root] [dispatch():18] [PID:22600 TID:22036] Received request: POST http://testserver/token
+[19/08/2023 15:15:27] [INFO] [root] [dispatch():28] [PID:22600 TID:22036] Response status code: 404
+[19/08/2023 15:15:27] [INFO] [httpx] [_send_single_request():1013] [PID:22600 TID:21300] HTTP Request: POST http://testserver/token "HTTP/1.1 404 Not Found"
+[19/08/2023 15:15:42] [DEBUG] [asyncio] [__init__():633] [PID:21052 TID:13816] Using proactor: IocpProactor
+[19/08/2023 15:15:42] [INFO] [root] [dispatch():18] [PID:21052 TID:13816] Received request: GET http://testserver/login
+[19/08/2023 15:15:42] [INFO] [root] [dispatch():28] [PID:21052 TID:13816] Response status code: 307
+[19/08/2023 15:15:42] [INFO] [httpx] [_send_single_request():1013] [PID:21052 TID:26900] HTTP Request: GET http://testserver/login "HTTP/1.1 307 Temporary Redirect"
+[19/08/2023 15:15:42] [DEBUG] [asyncio] [__init__():633] [PID:21052 TID:16624] Using proactor: IocpProactor
+[19/08/2023 15:15:42] [INFO] [root] [dispatch():18] [PID:21052 TID:16624] Received request: GET http://testserver/login/
+[19/08/2023 15:15:42] [INFO] [root] [dispatch():28] [PID:21052 TID:16624] Response status code: 405
+[19/08/2023 15:15:42] [INFO] [httpx] [_send_single_request():1013] [PID:21052 TID:26900] HTTP Request: GET http://testserver/login/ "HTTP/1.1 405 Method Not Allowed"
+[19/08/2023 15:15:42] [DEBUG] [asyncio] [__init__():633] [PID:21052 TID:4576] Using proactor: IocpProactor
+[19/08/2023 15:15:42] [INFO] [root] [dispatch():18] [PID:21052 TID:4576] Received request: POST http://testserver/login
+[19/08/2023 15:15:42] [INFO] [root] [dispatch():28] [PID:21052 TID:4576] Response status code: 307
+[19/08/2023 15:15:42] [INFO] [httpx] [_send_single_request():1013] [PID:21052 TID:26900] HTTP Request: POST http://testserver/login "HTTP/1.1 307 Temporary Redirect"
+[19/08/2023 15:15:42] [DEBUG] [asyncio] [__init__():633] [PID:21052 TID:27972] Using proactor: IocpProactor
+[19/08/2023 15:15:42] [INFO] [root] [dispatch():18] [PID:21052 TID:27972] Received request: POST http://testserver/login/
+[19/08/2023 15:15:42] [INFO] [root] [dispatch():28] [PID:21052 TID:27972] Response status code: 422
+[19/08/2023 15:15:42] [INFO] [httpx] [_send_single_request():1013] [PID:21052 TID:26900] HTTP Request: POST http://testserver/login/ "HTTP/1.1 422 Unprocessable Entity"
+[19/08/2023 15:15:51] [DEBUG] [asyncio] [__init__():633] [PID:14120 TID:9900] Using proactor: IocpProactor
+[19/08/2023 15:15:51] [INFO] [root] [dispatch():18] [PID:14120 TID:9900] Received request: GET http://testserver/login
+[19/08/2023 15:15:51] [INFO] [root] [dispatch():28] [PID:14120 TID:9900] Response status code: 307
+[19/08/2023 15:15:51] [INFO] [httpx] [_send_single_request():1013] [PID:14120 TID:17332] HTTP Request: GET http://testserver/login "HTTP/1.1 307 Temporary Redirect"
+[19/08/2023 15:15:51] [DEBUG] [asyncio] [__init__():633] [PID:14120 TID:20612] Using proactor: IocpProactor
+[19/08/2023 15:15:51] [INFO] [root] [dispatch():18] [PID:14120 TID:20612] Received request: GET http://testserver/login/
+[19/08/2023 15:15:51] [INFO] [root] [dispatch():28] [PID:14120 TID:20612] Response status code: 405
+[19/08/2023 15:15:51] [INFO] [httpx] [_send_single_request():1013] [PID:14120 TID:17332] HTTP Request: GET http://testserver/login/ "HTTP/1.1 405 Method Not Allowed"
+[19/08/2023 15:15:51] [DEBUG] [asyncio] [__init__():633] [PID:14120 TID:1768] Using proactor: IocpProactor
+[19/08/2023 15:15:51] [INFO] [root] [dispatch():18] [PID:14120 TID:1768] Received request: POST http://testserver/login
+[19/08/2023 15:15:51] [INFO] [root] [dispatch():28] [PID:14120 TID:1768] Response status code: 307
+[19/08/2023 15:15:51] [INFO] [httpx] [_send_single_request():1013] [PID:14120 TID:17332] HTTP Request: POST http://testserver/login "HTTP/1.1 307 Temporary Redirect"
+[19/08/2023 15:15:51] [DEBUG] [asyncio] [__init__():633] [PID:14120 TID:6400] Using proactor: IocpProactor
+[19/08/2023 15:15:51] [INFO] [root] [dispatch():18] [PID:14120 TID:6400] Received request: POST http://testserver/login/
+[19/08/2023 15:15:51] [INFO] [root] [dispatch():28] [PID:14120 TID:6400] Response status code: 422
+[19/08/2023 15:15:51] [INFO] [httpx] [_send_single_request():1013] [PID:14120 TID:17332] HTTP Request: POST http://testserver/login/ "HTTP/1.1 422 Unprocessable Entity"
