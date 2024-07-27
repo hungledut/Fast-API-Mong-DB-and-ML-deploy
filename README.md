@@ -1,4 +1,4 @@
-# HungLV_FastAP
+# HungLV_FastAPI
 
 ## Installation ⚡️
 ### Requires
